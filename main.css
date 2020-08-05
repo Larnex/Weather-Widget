@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.current-weather {
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-weather .app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.current-weather .weather-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-weather .weather-temperature {
+  font-size: 3rem;
+  font-weight: 800;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.current-weather .weather-temperature .temperature-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-weather .temperature-description {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.current-weather .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.current-weather .date > a {
+  color: orange;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.current-weather table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.current-weather table th {
+  font-weight: 200;
+  border: 1px solid black;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.current-weather table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.forecast {
+  height: 100vh;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.forecast-title {
+  font-size: 3rem;
+  font-weight: 800;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.forecast-weather {
+  width: 100%;
+}
+
+.forecast-weather .forecast-date {
+  background-color: #f5f5f5;
+  border: 1px lightgrey solid;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.forecast-weather .forecast-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.forecast-weather .forecast-about .forecast-time-icon {
+  width: 40%;
+}
+
+.forecast-weather .forecast-about .forecast-details {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.forecast-weather .forecast-about .forecast-details .forecast-desc-temp,
+.forecast-weather .forecast-about .forecast-details .forecast-rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forecast-weather .forecast-about .forecast-details .forecast-desc-temp > p,
+.forecast-weather .forecast-about .forecast-details .forecast-rest > p {
+  margin-right: 1rem;
+}
+
+.forecast-weather .forecast-about .forecast-details .forecast-temperature {
+  display: block;
+  background-color: lightgrey;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.forecast-weather .forecast-about .forecast-details .forecast-description {
+  font-style: italic;
+}
+/*# sourceMappingURL=main.css.map */
